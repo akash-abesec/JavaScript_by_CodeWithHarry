@@ -1,0 +1,29 @@
+<!-- Json Tutorial in JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tuturial</title>
+</head>
+<body>
+    <div class="container"> This is Json Tutorial</div>
+    <script>
+        let jsonObj={
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi"
+        }
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr=myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr);
+
+        newjsonObj = JSON.parse(myJsonStr);
+        console.log(newjsonObj);
+
+    </script>
+</body>
+</html>
